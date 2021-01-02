@@ -814,9 +814,9 @@ body {
 }
 
 .activety__list {
-  width: 250px;
+  width: 230px;
   position: absolute;
-  top: 150px;
+  top: 23vh;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -882,7 +882,7 @@ body {
 }
 
 .activety__item-img {
-  height: 150px;
+  height: 22vh;
 }
 
 @media screen and (min-width: 1025px) {
@@ -919,7 +919,7 @@ body {
 }
 
 .activety__item-txt {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.8em;
 }
 
