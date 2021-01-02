@@ -809,9 +809,9 @@ body {
 }
 
 .activety__list {
-  width: 270px;
+  width: 250px;
   position: absolute;
-  top: 200px;
+  top: 170px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -835,7 +835,7 @@ body {
 }
 
 .activety__item:nth-child(2) {
-  transform: rotate(15deg);
+  transform: rotate(10deg);
   z-index: -1;
 }
 
@@ -877,8 +877,14 @@ body {
 }
 
 .activety__item-img {
-  height: 310px;
-  width: 310px;
+  height: 150px;
+}
+
+@media screen and (min-width: 1025px) {
+  .activety__item-img {
+    height: 310px;
+    width: 310px;
+  }
 }
 
 .activety__item-info {
