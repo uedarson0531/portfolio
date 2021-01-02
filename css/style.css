@@ -814,7 +814,7 @@ body {
 }
 
 .activety__list {
-  width: 70%;
+  width: 65%;
   position: absolute;
   top: 23vh;
   left: 50%;
@@ -919,7 +919,7 @@ body {
 }
 
 .activety__item-txt {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.8em;
 }
 
@@ -1137,6 +1137,7 @@ body {
 /* vision */
 .vision__title {
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .vision__content {

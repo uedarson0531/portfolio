@@ -3,7 +3,7 @@
 .activety{
   position: relative;
   &__list{
-    width: 70%;
+    width: 65%;
     position: absolute;
     top: 23vh;
     left: 50%;
@@ -75,7 +75,7 @@
       }
     }
     &-txt{
-      font-size: 10px;
+      font-size: 11px;
       line-height: 1.8em;
       @media screen and (min-width:1025px){
         font-size: 14px;
