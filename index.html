@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- opening -->
+    <div class="opening">
+      <div class="opening__circle"> 
+        <div class="opening__cover1"></div>
+        <div class="opening__cover2"></div>
+        <p class="opening__percent"><span class="opening__percent-text" id="js-percent"></span>%</p>
+      </div>
+    </div>
+    <!-- /opening -->
+
+    <!-- back-to-top -->
+    <div class="back-to-top" id="btt"></div>
+    <!-- /back-to-top -->
+
+    <!-- zoom -->
+    <div class="zoom">
+      <div class="zoom__item js-moreone">
+        <div class="zoom__item-img">
+          <picture>
+            <source media="(min-width:769px)" srcset="img/moreone_pc.png" />
+            <source media="(max-width:768px)" srcset="img/moreone_sp.png" />
+            <img src="img/moreone_sp.png" alt="moreone" />
+          </picture>
+        </div>
+      </div>
+      
+      <div class="zoom__item js-shibata">
+        <div class="zoom__item-img">
+          <picture>
+            <source media="(min-width:769px)" srcset="img/shibata_pc.png" />
+            <source media="(max-width:768px)" srcset="img/shibata_sp.png" />
+            <img src="img/shibata_sp.png" alt="moreone" />
+          </picture>
+        </div>
+      </div>
+      
+      <div class="zoom__item js-jquery-text">
+        <div class="zoom__item-img">
+          <picture>
+            <source media="(min-width:769px)" srcset="img/jquery-text_sp.png" />
+            <source media="(max-width:768px)" srcset="img/jquery-text_sp.png" />
+            <img src="img/jquery-text_sp.png" alt="moreone" />
+          </picture>
+        </div>
+      </div>
+      
+      <div class="zoom__item js-jquery-text2">
+        <div class="zoom__item-img">
+          <picture>
+            <source media="(min-width:769px)" srcset="img/jquery-text2_pc.png" />
+            <source media="(max-width:768px)" srcset="img/jquery-text2_pc.png" />
+            <img src="img/jquery-text2_pc.png" alt="moreone" />
+          </picture>
+        </div>
+      </div>
+      
+      <div class="zoom__back" id="zoom__back"></div>
+    </div>
+    <!-- /zoom -->
+
+    <!-- main -->
+    <main class="main" id="main"> 
+        <section class="fv main__section" id="fv">
+          <div class="fv__img js-fade-in">
+            <img src="img/me.svg" alt="植田颯生">
+          </div>
+          <div class="fv__content js-fade-in">
+            <h1 class="fv__title js-fv-title">
+              <span>Satsuki Ueda</span>
+            </h1>
+            <p class="fv__sub-title js-fv-title">
+              <span>Web Engineer</span>
+            </p>
+            <p class="fv__greet js-fv-title">
+              <span>
+                初めまして、フロントエンドエンジニアの <br>
+                植田颯生です。
+              </span>
+            </p>
+          </div>
+        </section>
+        <section class="activety main__section js-trigger">
+          <h2 class="main__title js-title">
+            <span>Activety</span>
+          </h2>
+          <ul class="activety__list js-fade-in">
+            <li class="activety__item js-swipe">
+              <p class="activety__item-tag">My Work</p>
+              <div class="activety__item-content">
+                <div class="activety__item-img">
+                  <img src="img/teacher.jpg" alt="植田先生">
+                </div>
+                <div class="activety__item-info">
+                  <h3 class="activety__item-title">ZeroPlus 講師</h3>
+                  <p class="activety__item-txt">
+                    私はフリーランス特化型プログラミングスクール"ZeroPlus"で講師をおよそ1年半勤めております。<br>
+                    主にWebデザインの知識(HTML,CSS,jQuery,WordPress,Xd) <br>
+                    を専門的に講義や教材作成を行なっています。
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="activety__item js-wipe">
+              <p class="activety__item-tag _white">University</p>
+              <div class="activety__item-content">
+                <div class="activety__item-img">
+                  <img src="" alt="">
+                </div>
+                <div class="activety__item-info">
+                  <h3 class="activety__item-title">タイトル</h3>
+                  <p class="activety__item-txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="products main__section js-trigger">
+          <h2 class="main__title products__title js-title">
+            <span>Products</span> 
+          </h2>
+          <div class="products__example">
+            <h3 class="products__example-title js-title">
+              <span>Webサイト案件</span> 
+            </h3>
+            <ul class="products__list js-fade-in">
+              <li class="products__item" target="moreone">
+                <div class="products__item-img" id="js-moreone">
+                  <img src="img/moreone_icon.png" alt="moreone">
+                </div>
+                <p class="products__item-title">MOREONE</p>
+              </li>
+              <li class="products__item">
+                <div class="products__item-img" id="js-shibata">
+                  <img src="img/shibata_icon.png" alt="柴田">
+                </div>
+                <p class="products__item-title">柴田歯科</p>
+              </li>
+            </ul>
+          </div>
+          <div class="products__example">
+            <h3 class="products__example-title js-title">
+              <span>作成教材</span> 
+            </h3>
+            <ul class="products__list js-fade-in">
+              <li class="products__item">
+                <div class="products__item-img" id="js-jquery-text">
+                  <img src="img/jquery-text_icon.png" alt="jquery-text">
+                </div>
+                <p class="products__item-title">jQuery教材①</p>
+              </li>
+              <li class="products__item">
+                <div class="products__item-img" id="js-jquery-text2">
+                  <img src="img/jquery-text2_icon.png" alt="jquery-text2">
+                </div>
+                <p class="products__item-title">jQuery教材②</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="vision main__section js-trigger">
+          <h2 class="main__title vision__title js-title">
+            <span>Vision</span> 
+          </h2>
+          <div class="vision__content js-fade-in">
+            <p class="vision__copy">
+              "生徒様の為に"から、<br>
+              "全世界ユーザーの為に"へ
+            </p>
+            <p class="vision__txt">
+              私はプログラミング講師として生徒様が<br>
+              より気持ちよく、且つ効率的に学習できる授業や<br>
+              教材を考え制作してきました。<br>
+              ここで培った経験を、全世界に向けて<br>
+              発信していくのが私の夢です。
+            </p>
+
+          </div>
+        </section>
+      </main>
+      <!-- /main -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

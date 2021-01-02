@@ -1,0 +1,63 @@
+/* fvのスタイル */
+
+.fv{
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width:1025px){
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  &__content{
+    position: absolute;
+    width: 270px;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    background: $content-color;
+    box-shadow: 2px 3px 6px #666;
+    padding: 15px;
+    transition-delay: 0;
+    @media screen and (min-width:1025px){
+      box-shadow: none;
+      position: static;
+      width: auto;
+      padding-top: 100vh;
+    }
+  }
+  &__title{
+    font-size: 30px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    @media screen and (min-width:1025px){
+      font-size: 80px;
+    }
+  }
+  &__sub-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    @media screen and (min-width:1025px){
+      font-size: 40px;
+      margin-bottom: 70px;
+    }
+  }
+  &__greet{
+    font-size: 12px;
+    line-height: 1.5;
+    @media screen and (min-width:1025px){
+      font-size: 20px;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: -30px;
+    left: -120px;
+    transform: scale(0.9);
+    @media screen and (min-width:1025px){
+      position: static;
+      width: 700px;
+      transform: scale(1);
+    }
+  }
+}

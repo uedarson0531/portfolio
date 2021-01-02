@@ -1,0 +1,27 @@
+/* vision */
+
+.vision{
+  &__title{
+    margin-bottom: 100px;
+  }
+  &__content{
+    text-align: center;
+  }
+  &__copy{
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.8em;
+    @media screen and (min-width:1025px){
+      font-size: 40px;
+    }
+  }
+  &__txt{
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 2em;
+    @media screen and (min-width:1025px){
+      font-size: 20px;
+    }
+  }
+}

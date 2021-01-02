@@ -1,0 +1,9 @@
+
+//ブレイクポイント
+$breakPointList: 415px, 769px;
+
+//メディアクエリ
+$mq: (
+  'sp': 'screen and (max-width: #{nth($breakPointList, 1)})',
+  'pc': 'print,screen and (min-width: #{nth($breakPointList, 2)})'
+) !default;
