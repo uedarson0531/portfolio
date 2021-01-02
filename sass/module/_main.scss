@@ -2,8 +2,8 @@
 
 .main {
   @include border-box;
-  height: calc(100vh - 40px);
-  width: calc(100vw - 40px);
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
   position: absolute;
   top: 50%;
   left: 50%;

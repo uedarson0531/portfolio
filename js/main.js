@@ -38,7 +38,6 @@ $(function () {
   var percentUp = setInterval(function () {
     percentNum += 1;
     percentText.html(percentNum);
-    console.log(percentNum);
       
     if (percentNum == 100) {
       clearInterval(percentUp);
