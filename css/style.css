@@ -29,7 +29,7 @@ html {
 /* Sections */
 /* ============================================ */
 /**
- * Remove the margin in all browsers.
+ * Remove the margin in all brmowsers.
  */
 body {
   margin: 0;
@@ -578,7 +578,7 @@ body {
 .main__title {
   font-size: 60px;
   text-align: right;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-right: 15px;
   position: relative;
   overflow: hidden;
@@ -816,7 +816,7 @@ body {
 .activety__list {
   width: 250px;
   position: absolute;
-  top: 170px;
+  top: 150px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -919,7 +919,7 @@ body {
 }
 
 .activety__item-txt {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.8em;
 }
 
