@@ -531,6 +531,12 @@ body {
   width: 170px;
 }
 
+.activety__item.is-active {
+  opacity: 0;
+  transform: translate(-200px, 30px) rotate(-30deg);
+  transition: 1s;
+}
+
 /* mainのスタイル */
 .main {
   border: 1px solid #707070;
@@ -544,6 +550,12 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 .main__section {
@@ -812,6 +824,8 @@ body {
 
 .activety__item {
   position: absolute;
+  transition: 1.5s;
+  opacity: 1;
 }
 
 @media screen and (min-width: 1025px) {
@@ -902,6 +916,79 @@ body {
   .activety__item-txt {
     font-size: 14px;
   }
+}
+
+.activety__btn {
+  font-size: 30px;
+  position: absolute;
+  right: 15%;
+  bottom: 20%;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+  .activety__btn {
+    display: block;
+  }
+}
+
+.activety__btn > span {
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.activety__btn > span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 20px;
+  background: #666;
+  transition: .5s;
+}
+
+.activety__btn > span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 20px;
+  background: #666;
+  transition: .5s;
+}
+
+.activety__btn > span:hover::before, .activety__btn > span:hover::after {
+  width: 100%;
+}
+
+.activety__btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 20px;
+  background: #666;
+  transition: .5s;
+}
+
+.activety__btn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 20px;
+  background: #666;
+  transition: .5s;
+}
+
+.activety__btn:hover::after, .activety__btn:hover::before {
+  height: 100%;
 }
 
 /* productsのスタイル */

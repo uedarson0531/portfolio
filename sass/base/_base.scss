@@ -62,6 +62,12 @@ body {
   width: 170px;
 }
 
+.activety__item.is-active{
+  opacity: 0;
+  transform: translate(-200px,30px) rotate(-30deg);
+  transition: 1s;
+}
+
 // @media screen and (min-width: #{nth($breakPointList, 1)}) {
 // }
 

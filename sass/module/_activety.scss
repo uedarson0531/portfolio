@@ -14,6 +14,8 @@
   }
   &__item{
     position: absolute;
+    transition: 1.5s;
+    opacity: 1;
     @media screen and (min-width:1025px){
       padding: 20px;
     }
@@ -77,5 +79,62 @@
       }
     }
   }
-  
+  &__btn{
+    font-size: 30px;
+    position: absolute;
+    right: 15%;
+    bottom: 20%;
+    display: none;
+    cursor: pointer;
+    @media screen and (min-width:1025px){
+      display: block;
+    }
+    >span{
+      display: block;
+      position: relative;
+      padding: 10px 20px;
+      &::after{
+        @include pseudo-element;
+        top: 0;
+        left: 0;
+        height: 2px;
+        width: 20px;
+        background: $font-color;
+        transition: .5s;
+      }
+      &::before{
+        @include pseudo-element;
+        bottom: 0;
+        right: 0;
+        height: 2px;
+        width: 20px;
+        background: $font-color;
+        transition: .5s;
+      }
+      &:hover::before,&:hover::after{
+        width: 100%;
+      }
+    }
+    &::before{
+      @include pseudo-element;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 20px;
+      background: $font-color;
+      transition: .5s;
+    }
+    &::after{
+      @include pseudo-element;
+      right: 0;
+      bottom: 0;
+      width: 2px;
+      height: 20px;
+      background: $font-color;
+      transition: .5s;
+    }
+    &:hover::after,&:hover::before{
+      height: 100%;
+    }
+  }
 }

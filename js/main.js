@@ -151,5 +151,36 @@ $(function () {
     zoomBack.fadeOut();
   });
 
+  // activety next
+
+  const activetyNext = $('.js-actvety-next');
+
+  activetyNext.click(function () {
+    activetySlide();
+  });
+
+  let nowPage = 0;
+  let nextPage = 1;
+
+  const activetyList = $('.activety__list');
+  const activetyItem = $('.activety__item');
+
+
+  const activetySlide = () => {
+    activetyItem.eq(nowPage).addClass('is-active');
+    activetyItem.eq(nowPage).delay(1000).queue(function () {
+      $(this).appendTo(activetyList).dequeue();
+    });
+    activetyItem.eq(nowPage).delay(500).queue(function () {
+      $(this).removeClass('is-active').dequeue();
+    });
+    // setTimeout(function () {
+    //   // activetyList.append(activetyItem.eq(nowPage));
+    //   activetyItem.eq(nowPage).removeClass('is-active');
+    // },1000);
+    nowPage = nextPage;
+    nextPage = (nowPage + 1) % 2;
+  }
+
 
 });
