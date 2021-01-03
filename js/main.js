@@ -43,9 +43,9 @@ $(function () {
       clearInterval(percentUp);
     }
         
-  }, 12);
+  }, 8);
 
-  opening.delay(openingDelay).fadeOut(1000, function () {
+  opening.delay(openingDelay).fadeOut(800, function () {
     overall.removeClass('js-hidden');
     $('#fv').find('.js-fade-in').addClass('is-active');
     $('#fv').find('.js-fv-title').addClass('is-active');
@@ -107,12 +107,12 @@ $(function () {
 	function end_check(event)
 	{
 		if (moveX == "left")
-		{
-      swipe.addClass('is-active-left');
+    {
+      activetySlide();
 		}
 		else if (moveX == "right")
 		{
-			swipe.addClass('is-active-right');
+      activetySlide();
 		}
  
 	}
