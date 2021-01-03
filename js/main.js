@@ -2,6 +2,9 @@
 
 $(function () {
 
+  // var style = '<link rel="stylesheet" href="css/style.css">';
+  //   $('head link:last').after(style);
+
   const main = $('#main');
   const trigger = $('.js-trigger');
   
@@ -43,7 +46,7 @@ $(function () {
       clearInterval(percentUp);
     }
         
-  }, 5);
+  }, 10);
 
   opening.delay(openingDelay).fadeOut(1000, function () {
     overall.removeClass('js-hidden');
