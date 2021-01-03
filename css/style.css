@@ -651,7 +651,7 @@ body {
   background: #f5f7f0;
   /* 背景色に合わせて変更してください */
   transform-origin: 0 25%;
-  animation: draw .6s ease-in forwards;
+  animation: draw .8s ease-in forwards;
 }
 
 @keyframes draw {
@@ -670,7 +670,7 @@ body {
   background: #f5f7f0;
   /* 背景色に合わせて変更してください */
   transform-origin: 100% 40%;
-  animation: draw .6s ease-out .6s forwards;
+  animation: draw .8s ease-out .8s forwards;
 }
 
 @keyframes draw {

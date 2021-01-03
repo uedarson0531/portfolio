@@ -21,9 +21,9 @@ $(window).on('load', function () {
       clearInterval(percentUp);
     }
         
-  }, 25);
+  }, 30);
 
-  opening.delay(openingDelay).fadeOut(1000, function () {
+  opening.delay(openingDelay).fadeOut(1500, function () {
     overall.removeClass('js-hidden');
     $('#fv').find('.js-fade-in').addClass('is-active');
     $('#fv').find('.js-fv-title').addClass('is-active');
