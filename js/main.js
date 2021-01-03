@@ -1,5 +1,36 @@
 'use strict';
 
+$(window).on('load', function () {
+  
+
+  // opening
+
+  const opening = $('.opening');
+  const openingDelay = 1500
+  
+  const overall = $('body,html');
+
+  const percentText = $('#js-percent');
+  let percentNum = 0;
+
+  var percentUp = setInterval(function () {
+    percentNum += 1;
+    percentText.html(percentNum);
+      
+    if (percentNum == 100) {
+      clearInterval(percentUp);
+    }
+        
+  }, 10);
+
+  opening.delay(openingDelay).fadeOut(1000, function () {
+    overall.removeClass('js-hidden');
+    $('#fv').find('.js-fade-in').addClass('is-active');
+    $('#fv').find('.js-fv-title').addClass('is-active');
+  });
+
+});
+
 $(function () {
 
   // var style = '<link rel="stylesheet" href="css/style.css">';
@@ -28,31 +59,6 @@ $(function () {
   });
 
 
-  // opening
-
-  const opening = $('.opening');
-  const openingDelay = 1500
-  
-  const overall = $('body,html');
-
-  const percentText = $('#js-percent');
-  let percentNum = 0;
-
-  var percentUp = setInterval(function () {
-    percentNum += 1;
-    percentText.html(percentNum);
-      
-    if (percentNum == 100) {
-      clearInterval(percentUp);
-    }
-        
-  }, 10);
-
-  opening.delay(openingDelay).fadeOut(1000, function () {
-    overall.removeClass('js-hidden');
-    $('#fv').find('.js-fade-in').addClass('is-active');
-    $('#fv').find('.js-fv-title').addClass('is-active');
-  });
 
 
   // back-to-top
