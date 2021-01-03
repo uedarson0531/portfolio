@@ -93,11 +93,11 @@ $(function () {
 
 	function move_check(event)
 	{
-		if (posiX - getX(event) > 70) 
+		if (posiX - getX(event) > 50) 
 		{
 			moveX = "left";
 		}
-		else if (posiX - getX(event) < -70)  
+		else if (posiX - getX(event) < -50)  
 		{	
 			moveX = "right";
 		}
