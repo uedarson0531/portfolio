@@ -43,7 +43,7 @@ $(function () {
       clearInterval(percentUp);
     }
         
-  }, 8);
+  }, 5);
 
   opening.delay(openingDelay).fadeOut(1000, function () {
     overall.removeClass('js-hidden');
@@ -167,7 +167,7 @@ $(function () {
 
   const activetySlide = () => {
     activetyItem.eq(nowPage).addClass('is-active');
-    activetyItem.eq(nowPage).delay(1000).queue(function () {
+    activetyItem.eq(nowPage).delay(700).queue(function () {
       $(this).appendTo(activetyList).dequeue();
     });
     activetyItem.eq(nowPage).delay(500).queue(function () {
