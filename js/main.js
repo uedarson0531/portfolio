@@ -14,14 +14,14 @@ $(window).on('load', function () {
   let percentNum = 0;
 
   var percentUp = setInterval(function () {
-    percentNum += 1;
+    percentNum += 2;
     percentText.html(percentNum);
       
     if (percentNum == 100) {
       clearInterval(percentUp);
     }
         
-  }, 10);
+  }, 25);
 
   opening.delay(openingDelay).fadeOut(1000, function () {
     overall.removeClass('js-hidden');
