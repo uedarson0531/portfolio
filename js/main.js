@@ -29,12 +29,11 @@ $(window).on('load', function () {
     $('#fv').find('.js-fv-title').addClass('is-active');
   });
 
+  var style = '<link rel="stylesheet" href="css/style.css">';
+    $('head link:last').after(style);
 });
 
 $(function () {
-
-  // var style = '<link rel="stylesheet" href="css/style.css">';
-  //   $('head link:last').after(style);
 
   const main = $('#main');
   const trigger = $('.js-trigger');
