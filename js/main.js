@@ -23,7 +23,7 @@ $(window).on('load', function () {
         
   }, 30);
 
-  opening.delay(openingDelay).fadeOut(1500, function () {
+  opening.delay(openingDelay).fadeOut(1200, function () {
     overall.removeClass('js-hidden');
     $('#fv').find('.js-fade-in').addClass('is-active');
     $('#fv').find('.js-fv-title').addClass('is-active');
@@ -176,10 +176,10 @@ $(function () {
 
   const activetySlide = () => {
     activetyItem.eq(nowPage).addClass('is-active');
-    activetyItem.eq(nowPage).delay(700).queue(function () {
+    activetyItem.eq(nowPage).delay(400).queue(function () {
       $(this).appendTo(activetyList).dequeue();
     });
-    activetyItem.eq(nowPage).delay(500).queue(function () {
+    activetyItem.eq(nowPage).delay(200).queue(function () {
       $(this).removeClass('is-active').dequeue();
     });
     // setTimeout(function () {

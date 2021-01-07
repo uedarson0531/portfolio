@@ -1061,12 +1061,20 @@ body {
   height: 100px;
   background: #666;
   margin-bottom: 5px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1025px) {
   .products__item-img {
     width: 200px;
     height: 200px;
+  }
+  .products__item-img > img {
+    transition: 0.5s;
+  }
+  .products__item-img:hover img {
+    transform: scale(1.1);
   }
 }
 
