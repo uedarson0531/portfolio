@@ -3,7 +3,7 @@
 
 .products{
   &__title{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   &__example{
@@ -48,7 +48,7 @@
       overflow: hidden;
       @media screen and (min-width:1025px){
         width: 200px;
-        height: 200px;
+        height: 20vh;
         >img{
           transition: 0.5s;
         }
